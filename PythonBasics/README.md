@@ -33,3 +33,5 @@ Taking input is also easy in Python. You just use input keyword to take a input 
      * Function body: This is where you write the actual code that the function will execute. It consists of one or more statements that define the behavior of the function.
      * return: This keyword is used to send a value back from the function to the caller. It is optional, and a function can have zero or more return statements. If there is no return statement, the function returns None by default.
 Functions are a fundamental concept in Python programming, and they play a key role in writing clean and maintainable code. They can be as simple or as complex as needed to accomplish your programming tasks. See code
+## Tuple & Set: 
+a group of numbers we can store. In the case of set you can modify and updated. But tuple is immutable so you cannot update, modify or change any number. If you store anything mutable inside a tuple you can modify. 

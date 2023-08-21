@@ -34,6 +34,7 @@ def divide(num1, num2=2):
 
 divide(12)
 
+#Tuples
 #args: taking multiple arguments within one parameter
 def showEach(*numbers):
     for num in numbers:
