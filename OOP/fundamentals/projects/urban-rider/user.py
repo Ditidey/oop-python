@@ -9,6 +9,7 @@ class User:
         with open('user.txt', 'w') as file:
             file.write(f'{email} {pwd_encript}')
             file.close()
+    @staticmethod
     def log_in(self,email, password):
         store_pass = ''
         with open('user.txt', 'r') as file:
@@ -25,6 +26,23 @@ class User:
         else:
             print('non valid')
             return False
+class Rider(User):
+    def __init__(self, name, email, password, location, balance):
+        super().__init__(name, email, password)
+        self.location = location
+        self.balance = balance
+
+    def start_a_trip(self, location):
+        self.location = location
+    def request_trip(self, location):
+        self.location
+
+class Driver(User):
+    def __init__(self, name, email, password, location, license):
+        super().__init__(name, email, password)
+        self.location = location
+        self.license = license
+        self.earnings = 0
 
 diti = User('diti', 'diti@dey.com', 'diti12')
 diti.log_in('diti@dey.com', 'diti12')
